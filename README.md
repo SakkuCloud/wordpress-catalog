@@ -62,17 +62,17 @@ $ docker build -t catalog-wordpress:latest .
 
 ## How to use
 
-docker run:
+**Docker run**:
 
 You can run the image as a normal docker image.
 
 **e.g**:
 
- ```shell
+ ```bash
  $ docker run --rm --env memory_limit=512M --env allow_url_include=On --name mywordpress wordpress-catalog:latest
   ```
 **Note**: if you want to use the default values, simply run:
 
-````shell
+```bash
 $ docker run --rm --name mywordpress wordpress-catalog:latest
-````
+```
