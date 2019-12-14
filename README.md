@@ -63,7 +63,9 @@ $ docker build -t catalog-wordpress:latest .
 ## How to use
 
 docker run:
+
 You can run the image as a normal docker image.
+
 **e.g**:
 
  ```shell
