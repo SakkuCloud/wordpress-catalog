@@ -1,7 +1,7 @@
-# Wordpress-Catalog - A custom Wordpress image from the official Wordpress https://github.com/docker-library/wordpress
+# Wordpress-Catalog - A custom Wordpress image from the [official Wordpress](https://github.com/docker-library/wordpress)
 
-This is a custom wordpress Docker image from original wordpress repository https://github.com/docker-library/wordpress
-The following php.ini parameters can be set as extra environment variables than the original ones at docker container instantiation or even using a docker-compose file:
+This is a custom wordpress Docker image from original wordpress [repository](https://github.com/docker-library/wordpress)
+The following `php.ini` parameters can be set as extra environment variables than the original ones at docker container instantiation or even using a docker-compose file:
 
         short_open_tag
 		output_buffering
@@ -28,23 +28,27 @@ The following php.ini parameters can be set as extra environment variables than 
 		smtp_port  
 
 
-# Contents
+## Contents
+
 * [Motivations](https://github.com/SakkuCloud/wordpress-catalog#motivations)
 * [Prerequisities](https://github.com/SakkuCloud/wordpress-catalog#Prerequisities)
 * [How to build](https://github.com/SakkuCloud/wordpress-catalog#how-to-build)
 * [How to use](https://github.com/SakkuCloud/wordpress-catalog#how-to-use)
 
-# Motivations
+## Motivations
+
 To work properly Wordpress needs PHP parameters to be configured manually at run time. So, we have created a custom wordpress docker images to easily configure the most important php.ini parameters at container instantiation.
 
-# Prerequisities
+## Prerequisities
+
 In order to run this container you'll need docker installed.
 
 * [Windows](https://docs.docker.com/windows/started)
 * [OS X](https://docs.docker.com/mac/started/)
 * [Linux](https://docs.docker.com/linux/started/)
 
-# How to build
+## How to build
+
 First clone the Dockerfile:
 ```shell
 $ git clone https://github.com/SakkuCloud/wordpress-catalog.git
@@ -56,8 +60,9 @@ $ docker build -t catalog-wordpress:latest .
 ```
 Note: you can use catalog-wordpress or any preferred name to build the image.
 
-# How to use
- docker run:
+## How to use
+
+docker run:
  You can run the image as a normal docker image.
  ### e.g
  ```shell
