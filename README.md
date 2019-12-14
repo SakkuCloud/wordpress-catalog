@@ -58,17 +58,19 @@ then build the image:
 ```shell
 $ docker build -t catalog-wordpress:latest .
 ```
-Note: you can use catalog-wordpress or any preferred name to build the image.
+**Note**: you can use catalog-wordpress or any preferred name to build the image.
 
 ## How to use
 
 docker run:
- You can run the image as a normal docker image.
- ### e.g
+You can run the image as a normal docker image.
+**e.g**:
+
  ```shell
  $ docker run --rm --env memory_limit=512M --env allow_url_include=On --name mywordpress wordpress-catalog:latest
   ```
-### Note: if you want to use the default values, simply run:
+**Note**: if you want to use the default values, simply run:
+
 ````shell
 $ docker run --rm --name mywordpress wordpress-catalog:latest
 ````
