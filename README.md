@@ -1,32 +1,34 @@
 # Wordpress-Catalog - A custom Wordpress image from the [official Wordpress](https://github.com/docker-library/wordpress)
 
-This is a custom wordpress Docker image from original wordpress [repository](https://github.com/docker-library/wordpress)
-The following `php.ini` parameters can be set as extra environment variables than the original ones at docker container instantiation or even using a docker-compose file:
+This is a custom wordpress Docker image from original wordpress [repository](https://github.com/docker-library/wordpress).
 
-        short_open_tag
-		output_buffering
-        open_basedir            
-		disable_functions        
-		expose_php               
-		max_execution_time       
-		max_input_time           
-		memory_limit             
-		display_errors           
-		display_startup_errors   
-		log_errors               
-		log_errors_max_len       
-		ignore_repeated_errors   
-		ignore_repeated_source   
-		post_max_size             
-		file_uploads              
-		upload_tmp_dir           
-		upload_max_filesize       
-		max_file_uploads          
-		allow_url_fopen            
-		allow_url_include          
-		SMTP                        
-		smtp_port  
+The following `php.ini` parameters can be set as extra environment variables than the original ones at Docker container instantiation or even using a docker-compose file:
 
+```env
+short_open_tag
+output_buffering
+open_basedir
+disable_functions
+expose_php
+max_execution_time
+max_input_time
+memory_limit
+display_errors
+display_startup_errors
+log_errors
+log_errors_max_len
+ignore_repeated_errors
+ignore_repeated_source
+post_max_size
+file_uploads
+upload_tmp_dir
+upload_max_filesize
+max_file_uploads
+allow_url_fopen
+allow_url_include
+SMTP
+smtp_port  
+```
 
 ## Contents
 
@@ -37,11 +39,11 @@ The following `php.ini` parameters can be set as extra environment variables tha
 
 ## Motivations
 
-To work properly Wordpress needs PHP parameters to be configured manually at run time. So, we have created a custom wordpress docker images to easily configure the most important php.ini parameters at container instantiation.
+To work properly Wordpress needs PHP parameters to be configured manually at run time. So, we have created a custom wordpress docker images to easily configure the most important `php.ini` parameters at container instantiation.
 
 ## Prerequisities
 
-In order to run this container you'll need docker installed.
+In order to run this container you'll need Docker installed.
 
 * [Windows](https://docs.docker.com/windows/started)
 * [OS X](https://docs.docker.com/mac/started/)
